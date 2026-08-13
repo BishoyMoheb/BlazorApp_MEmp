@@ -1,0 +1,10 @@
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.AssemblyInfoInputs.cache
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.AssemblyInfo.cs
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\bin\Debug\netstandard2.0\CLib_MEmp.deps.json
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\bin\Debug\netstandard2.0\CLib_MEmp.dll
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\bin\Debug\netstandard2.0\CLib_MEmp.pdb
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.dll
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.pdb
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.csproj.CoreCompileInputs.cache
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.csproj.AssemblyReference.cache
+C:\Users\Bishoy Moheb\Documents\Visual Studio 2019\Proj 2019\BlazorApp_MEmp\CLib_MEmp\obj\Debug\netstandard2.0\CLib_MEmp.GeneratedMSBuildEditorConfig.editorconfig
