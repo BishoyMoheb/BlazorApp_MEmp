@@ -1,0 +1,16 @@
+﻿<input id="FName" @attributes="DSObj_ChildAtt" value="@CValue" />
+
+@code{
+    [Parameter]
+    public Dictionary<string, object> DSObj_ChildAtt { get; set; }
+        = new Dictionary<string, object>()
+        {
+            {"Required","required" },
+            {"Size","100" },
+            {"MaxLength","15" },
+            {"Placeholder","Child Component Placeholder Text" }
+            };
+
+    [Parameter]
+    public string CValue { get; set; } = "Child Value";
+}

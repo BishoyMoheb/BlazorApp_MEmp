@@ -1,0 +1,15 @@
+﻿@page "/pc_02"
+
+<ChildComp_02 DSObj_ChildAtt="DSObj_ParentAtt" CValue="Parent Value">
+</ChildComp_02>
+
+@code{
+    public Dictionary<string, object> DSObj_ParentAtt { get; set; }
+        = new Dictionary<string, object>()
+        {
+            {"Required","required" },
+            {"Size","50" },
+            {"MaxLength","5" },
+            {"Placeholder","Parent Component Placeholder Text" }
+        };
+}

@@ -1,0 +1,11 @@
+﻿@page "/c_pc_01"
+
+<h1 style="@PStyle">Parent Component Text</h1>
+
+<CascadingValue Value="@PStyle">
+    <Comp_C_01></Comp_C_01>
+</CascadingValue>
+
+@code {
+    public string PStyle { get; set; } = "color:red";
+}

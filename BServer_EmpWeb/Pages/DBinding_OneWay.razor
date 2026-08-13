@@ -1,0 +1,44 @@
+﻿@page "/dbinding_oneway"
+@inherits DBinding_OneWayBase
+
+<h1 style="font-family:'Book Antiqua'">Data Binding</h1>
+
+<hr />
+<h3 style="font-family:'Book Antiqua'">One way data binding</h3>
+
+<div>
+    <b>Name: </b>@DB_Name
+</div>
+
+<div>
+    <b>Name with title: </b>@(DB_Gender=="Male"? $"Mr. {DB_Name}" : $"Miss {DB_Name}")
+</div>
+
+<div>
+    <b>Name input: </b> <input value="@DB_Name" />
+</div>
+
+<hr />
+<h3 style="font-family:'Book Antiqua'">Two ways data binding</h3>
+
+<div>
+    <b>Name input: </b> <input value="@DB_Name" 
+                               @onchange="@(e => { DB_Name = e.Value.ToString(); })"/>
+</div>
+
+<div>
+    <b>Name input BIND: </b> <input @bind="DB_Name" />
+</div>
+
+<div>
+    <b>Name input BIND EVENT: </b> <input @bind="DB_Name" @bind:event="oninput" />
+</div>
+
+
+<div>
+    <b>Colour input BIND EVENT: </b> <input @bind="DB_Colour" />
+</div>
+
+<div @bind-style="DB_Colour" @bind-style:event="onchange">
+    <h3>The text background colour to be changed</h3>
+</div>

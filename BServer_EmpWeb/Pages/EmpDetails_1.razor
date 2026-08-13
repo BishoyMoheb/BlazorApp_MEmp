@@ -1,0 +1,43 @@
+﻿@page "/empdetails_1/{empid}"
+@page "/empdetails_1"
+@inherits EmpDetailsBase
+
+<h3 style="font-family:'Book Antiqua'">Empolyee Details</h3>
+
+@if (mEmp == null || mEmp.Dep_Nav == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <div class="row justify-content-center m-3" style="font-family:'Book Antiqua'">
+
+        <div class="col-sm-8">
+
+            <div class="card">
+
+                <div class="card-header">
+                    <h1 style="font-family:'Book Antiqua'">
+                        @mEmp.FirstName @mEmp.LastName
+                    </h1>
+                </div>
+
+                <div class="card-body text-center">
+                    <img class="card-img-top" src="@mEmp.PhotoPath" />
+                    <h4 style="font-family:'Book Antiqua'">Employee ID: @mEmp.EmpID</h4>
+                    <h4 style="font-family:'Book Antiqua'">Email: @mEmp.Email</h4>
+                    <h4 style="font-family:'Book Antiqua'">Department: @mEmp.Dep_Nav.DepName</h4>
+                </div>
+
+                <div class="card-footer text-center">
+                    <a href="/" class="btn btn-primary">Back</a>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+}

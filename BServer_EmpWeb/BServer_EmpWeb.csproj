@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\ChildComp_01.razor" />
+    <Content Remove="Pages\ChildComp_02.razor" />
+    <Content Remove="Pages\Comp_C_01.razor" />
+    <Content Remove="Pages\Comp_C_02.razor" />
+    <Content Remove="Pages\Comp_GC_01.razor" />
+    <Content Remove="Pages\Comp_GC_02.razor" />
+    <Content Remove="Pages\Comp_P_01.razor" />
+    <Content Remove="Pages\Comp_P_02.razor" />
+    <Content Remove="Pages\EditEmp_0.razor" />
+    <Content Remove="Pages\EditEmp_00.razor" />
+    <Content Remove="Pages\EditEmp_01.razor" />
+    <Content Remove="Pages\EditEmp_02.razor" />
+    <Content Remove="Pages\EditEmp_03.razor" />
+    <Content Remove="Pages\EditEmp_04.razor" />
+    <Content Remove="Pages\EditEmp_05.razor" />
+    <Content Remove="Pages\EditEmp_06.razor" />
+    <Content Remove="Pages\EditEmp_07.razor" />
+    <Content Remove="Pages\EditEmp_08.razor" />
+    <Content Remove="Pages\EditEmp_09.razor" />
+    <Content Remove="Pages\EditEmp_1.razor" />
+    <Content Remove="Pages\EditEmp_10.razor" />
+    <Content Remove="Pages\EditEmp_11.razor" />
+    <Content Remove="Pages\EditEmp_2.razor" />
+    <Content Remove="Pages\EditEmp_3.razor" />
+    <Content Remove="Pages\EditEmp_4.razor" />
+    <Content Remove="Pages\EditEmp_5.razor" />
+    <Content Remove="Pages\EditEmp_6.razor" />
+    <Content Remove="Pages\EditEmp_7.razor" />
+    <Content Remove="Pages\EditEmp_8.razor" />
+    <Content Remove="Pages\EditEmp_9.razor" />
+    <Content Remove="Pages\EmpCList_1.razor" />
+    <Content Remove="Pages\EmpCList_2.razor" />
+    <Content Remove="Pages\EmpCList_3.razor" />
+    <Content Remove="Pages\EmpDetails_0.razor" />
+    <Content Remove="Pages\EmpDetails_1.razor" />
+    <Content Remove="Pages\EmpList_0.razor" />
+    <Content Remove="Pages\EmpList_1.razor" />
+    <Content Remove="Pages\EmpList_2.razor" />
+    <Content Remove="Pages\EmpList_3.razor" />
+    <Content Remove="Pages\ParentComp_01.razor" />
+    <Content Remove="Pages\ParentComp_02.razor" />
+    <Content Remove="Shared\NavMenu_01.razor" />
+    <Content Remove="Shared\NavMenu_02.razor" />
+    <Content Remove="Shared\NavMenu_03.razor" />
+    <Content Remove="Shared\NavMenu_04.razor" />
+    <Content Remove="Shared\NavMenu_05.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview3.20168.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.DataAnnotations.Validation" Version="3.2.0-rc1.20223.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CLib_MEmp\CLib_MEmp.csproj" />
+    <ProjectReference Include="..\Gen_RCLib\Gen_RCLib.csproj" />
+  </ItemGroup>
+
+</Project>

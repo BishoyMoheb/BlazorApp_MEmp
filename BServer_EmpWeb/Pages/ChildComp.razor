@@ -1,0 +1,11 @@
+﻿<input id="FName" placeholder="Default Placeholder Text" 
+       @attributes="DSObj_ChildAtt" value="@CValue" />
+
+@code{
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> DSObj_ChildAtt { get; set; }
+        = new Dictionary<string, object>();
+
+    [Parameter]
+    public string CValue { get; set; } = "Child Value";
+}

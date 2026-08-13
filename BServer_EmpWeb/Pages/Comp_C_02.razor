@@ -1,0 +1,15 @@
+﻿<h1 style="@CStyle; @CBorderStyle">-Child Component Text, 
+                                    Employee Age is @CEmpAge</h1>
+
+<Comp_GC_02></Comp_GC_02>
+
+@code {
+    [CascadingParameter(Name = "ColorStyle")]
+    public string CStyle { get; set; }
+
+    [CascadingParameter(Name = "BorderStyle")]
+    public string CBorderStyle { get; set; }
+
+    [CascadingParameter]
+    public int CEmpAge { get; set; }
+}

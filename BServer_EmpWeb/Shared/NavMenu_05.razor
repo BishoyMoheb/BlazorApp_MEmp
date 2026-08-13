@@ -1,0 +1,55 @@
+﻿<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">BServer_EmpWeb</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </li>
+        @* Force the NavLink to be redirected from the server *@
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/editemp" @onclick="HandleClik" Match="NavLinkMatch.All">
+                <span class="oi oi-file" aria-hidden="true"></span> Create
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/editemp/1" Match="NavLinkMatch.All">
+                <span class="oi oi-pencil" aria-hidden="true"></span> Edit
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/Identity/Account/Login" Match="NavLinkMatch.All">
+                <span class="oi oi-lock-locked" aria-hidden="true"></span> Login
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/Identity/Account/Logout" Match="NavLinkMatch.All">
+                <span class="oi oi-power-standby" aria-hidden="true"></span> Logout
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    @inject NavigationManager NavManager;
+
+    private void HandleClik()
+    {
+        NavManager.NavigateTo("editemp", true);
+    }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

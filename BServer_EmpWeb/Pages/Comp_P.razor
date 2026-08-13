@@ -1,0 +1,26 @@
+﻿@page "/c_pc"
+
+<button class="btn btn-primary" @onclick="EH_IncrementCounter">
+    Increment Counter
+</button>
+
+<h1 style="@PStyle">Parent Component Text - @PCounter</h1>
+
+<CascadingValue Value="@PCounter" Name="Counter" IsFixed="false">
+    <CascadingValue Value="@PStyle" Name="ColorStyle" IsFixed="true">
+        <CascadingValue Value="@PBorderStyle" Name="BorderStyle" IsFixed="true">
+            <Comp_C></Comp_C>
+        </CascadingValue>
+    </CascadingValue>
+</CascadingValue>
+
+@code {
+    public string PStyle { get; set; } = "color:red";
+    public string PBorderStyle { get; set; } = "border:1px solid red";
+    public int PCounter { get; set; } = 0;
+
+    private void EH_IncrementCounter()
+    {
+        PCounter = PCounter + 1;
+    }
+}

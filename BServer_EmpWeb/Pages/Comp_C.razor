@@ -1,0 +1,14 @@
+﻿<h1 style="@CStyle; @CBorderStyle">-Child Component Text - @CCounter</h1>
+
+<Comp_GC></Comp_GC>
+
+@code {
+    [CascadingParameter(Name = "ColorStyle")]
+    public string CStyle { get; set; }
+
+    [CascadingParameter(Name = "BorderStyle")]
+    public string CBorderStyle { get; set; }
+
+    [CascadingParameter(Name = "Counter")]
+    public int CCounter { get; set; }
+}

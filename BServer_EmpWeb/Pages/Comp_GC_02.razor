@@ -1,0 +1,9 @@
+﻿<h1 style="@GCStyle; @GCBorderStyle">--Grand Child Component Text</h1>
+
+@code {
+    [CascadingParameter(Name = "ColorStyle")]
+    public string GCStyle { get; set; }
+
+    [CascadingParameter(Name = "BorderStyle")]
+    public string GCBorderStyle { get; set; }
+}

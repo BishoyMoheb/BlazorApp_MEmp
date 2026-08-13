@@ -1,0 +1,16 @@
+﻿<input id="FName" required="@Required" maxlength="@MaxLength" size="@Size"
+       placeholder=@Placeholder/>
+
+@code{ 
+    [Parameter]
+    public string Required { get; set; } = "Required";
+
+    [Parameter]
+    public string MaxLength { get; set; } = "15";
+
+    [Parameter]
+    public string Size { get; set; } = "25";
+
+    [Parameter]
+    public string Placeholder { get; set; } = "Child Component Placeholder Text";
+}

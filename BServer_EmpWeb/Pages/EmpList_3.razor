@@ -1,0 +1,35 @@
+﻿@page "/"
+@inherits EmpListBase
+
+<h3 style="font-family:'Book Antiqua'">
+    Employee List
+    <br />
+    Employee(s) Selection number : @Emp_SelectionNum
+</h3>
+
+<input type="checkbox" id="ShowOrHideFooter" @bind="Is_Footer_Visible"/>
+<label for="ShowOrHideFooter">
+    @if (Is_Footer_Visible)
+        Lbl_Value = "Hide Footer";
+    else
+        Lbl_Value = "Show Footer";
+    @Lbl_Value
+</label>
+
+@if (E_MEmpI == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <div class="card-deck" style="font-family:'Book Antiqua'">
+
+        @foreach (var E_mEmp in E_MEmpI)
+        {
+            <EmpCList mEmp="E_mEmp" IsVisibleFooter="Is_Footer_Visible"
+                      OnSelectingEmp="EH_EmpSelectionChange"
+                      OnDeletingEmp="EH_EmpDeletedAsync"></EmpCList>
+        }
+
+    </div>
+}

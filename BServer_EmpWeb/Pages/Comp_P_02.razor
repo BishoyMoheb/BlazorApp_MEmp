@@ -1,0 +1,17 @@
+﻿@page "/c_pc_02"
+
+<h1 style="@PStyle">Parent Component Text</h1>
+
+<CascadingValue Value="@PStyle" Name="ColorStyle">
+    <CascadingValue Value="@PBorderStyle" Name="BorderStyle">
+        <CascadingValue Value="@PEmpAge">
+            <Comp_C_02></Comp_C_02>
+        </CascadingValue>
+    </CascadingValue>
+</CascadingValue>
+
+@code {
+    public string PStyle { get; set; } = "color:red";
+    public string PBorderStyle { get; set; } = "border:1px solid red";
+    public int PEmpAge { get; set; } = 25;
+}
